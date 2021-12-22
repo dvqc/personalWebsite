@@ -1,4 +1,7 @@
-html,
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -13,4 +16,21 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.flx{
+  display: flex;
+}
+
+.icon-container{
+  margin: 5px 10px;
+}
+
+.pic{
+  max-width: 25rem;
 }

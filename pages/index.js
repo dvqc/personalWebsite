@@ -5,11 +5,11 @@ import Layout from '../components/Layout'
 
 const Home = () => {
   return (
-    <div>
+    <main>
       <h1>HomePage</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet explicabo ut inventore deleniti aperiam atque et sapiente totam id magni ipsa consectetur ratione minus aliquam labore odit, dolorum tenetur officiis.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet explicabo ut inventore deleniti aperiam atque et sapiente totam id magni ipsa consectetur ratione minus aliquam labore odit, dolorum tenetur officiis.</p>
-    </div>
+      <img src="me.jpeg" className="pic" alt="My picture"></img>
+      <p>Hey there, My name is Ibrahim and I am a full stack developer </p>
+    </main>
   )
 }
 Home.getLayout = page => (
