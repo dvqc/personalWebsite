@@ -5,10 +5,12 @@ import Layout from '../components/Layout'
 
 const Home = () => {
   return (
-    <main>
-      <h1>HomePage</h1>
-      <img src="me.jpeg" className="pic" alt="My picture"></img>
-      <p>Hey there, My name is Ibrahim and I am a full stack developer </p>
+    <main className={styles.homeCard}>
+      <img src="/me.jpeg" alt="My picture"></img>
+      <div className={styles.description}>
+        <p>Hey there, </p>
+        <p>My name is Ibrahim and I am a full stack developer </p>
+      </div>
     </main>
   )
 }

@@ -1,12 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Poppins:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap');
+
+:root{
+--maind-dark: #000814ff;
+--main-blue : #001d3dff;
+--sec-blue: #003566ff;
+--sec-yellow: #ffc300ff;
+--sec-golden: #ffd60a;
+--sec-golden-off: rgb(180, 150, 1);
+
+}
+
 html {
   scroll-behavior: smooth;
 }
 
+
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Source code pro' , monospace, sans-serif;
+  font-weight: 200;
+  min-height: 100vh;
+}
+
+#__next {
+  min-height: 100vh;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 a {
@@ -16,21 +40,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-.icon {
-  width: 3rem;
-  height: 3rem;
-}
-
-.flx{
-  display: flex;
-}
-
-.icon-container{
-  margin: 5px 10px;
-}
-
-.pic{
-  max-width: 25rem;
 }
