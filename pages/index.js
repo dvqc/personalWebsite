@@ -41,7 +41,7 @@ const Home = () => {
   return (
     <main>
       <section className={styles.homeCard}>
-        <img src="/me.jpeg" alt="My picture"></img>
+        <img src="/me1.jpg" alt="My picture"></img>
         <div className={styles.description}>
           <span>Hey there, </span>
           <p >{message}</p>

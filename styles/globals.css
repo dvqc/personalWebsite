@@ -7,8 +7,8 @@
     --sec-yellow: #ffc300ff;
     --sec-golden: #ffd60a;
     --sec-golden-off: rgb(192, 160, 2);
-    --card-gradient: linear-gradient(300deg, rgba(71, 90, 255, 0.733), rgba(85, 167, 221, 0.836));
-    --bg-gradient: linear-gradient(65deg, rgb(24, 37, 156), rgb(34, 112, 201));
+    --card-gradient: linear-gradient(to top, rgba(71, 90, 255, 0.733), rgba(85, 167, 221, 0.836));
+    --bg-gradient: linear-gradient(to bottom, rgb(24, 37, 156), rgb(34, 112, 201));
     font-size: 15px;
 }
 
@@ -29,6 +29,17 @@ body {
 li {
     list-style: none;
 }
+
+li::before {
+    content: '';
+    display: inline-block;
+    height: 0.6rem;
+    width: 0.6rem;
+    background: var(--sec-yellow);
+    margin-right: 5px;
+    border-radius: 0.6rem;
+}
+
 #__next {
     min-height: 100vh;
 }
@@ -50,4 +61,10 @@ a {
 .flx {
     display: flex;
     flex-wrap: wrap;
+}
+
+@media (max-width:450px) {
+    :root {
+        font-size: 10px;
+    }
 }
