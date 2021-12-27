@@ -1,0 +1,39 @@
+
+.title {
+    color: var(--sec-yellow);
+    font-weight: 500;
+    width: fit-content;
+}
+
+
+.aboutCard {
+    margin: 4rem 2rem;
+    padding: 1rem 2rem;
+    background: var(--card-gradient);
+    border-radius: 20px;
+    box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.404),
+                0 30px 60px -30px rgba(0, 0, 0, 0.384),
+                inset 0 -2px 6px 0 rgb(10 37 64 / 35%);
+    font-weight: 400;
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+
+.icon {
+    width: 3rem;
+}
+
+.iconContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutIntro {
+    padding: 1rem 2rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: aliceblue;
+}

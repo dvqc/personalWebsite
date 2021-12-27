@@ -3,11 +3,14 @@ import AboutCard from '../components/AboutCard'
 import TechIcon from '../components/TechIcon'
 import List from '../components/List'
 import IconsList from '../components/IconsList'
+import styles from '../styles/About.module.css'
+
+
 const About = () => {
     return (
         <main>
-            <h1>About Me</h1>
-            <p>
+            <h1 className={styles.title}>About Me</h1>
+            <p className={styles.aboutIntro}>
                 A full stack developer who is always looking to learn and grow, have some experience in databases design and administration,
                 machine learning, front end and back end development. A problem solver, independent employee with high attention to
                 detail, equipped with diverse skills, able to work independently as well as collaborate in a team setting.

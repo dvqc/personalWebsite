@@ -6,29 +6,36 @@ import { useState, useEffect } from 'react'
 
 const Home = () => {
   const introMessage = "My name is Ibrahim and I am a full stack developer";
+  const welcomeMessage = "Welcome to my website"
   const [message, setMessage] = useState("");
-  const [restart, setRestart] = useState(false)
-  const typing = (i) => {
+  const [restart, setRestart] = useState(false);
+  const [currentMessage, setCurrMessage] = useState(introMessage.slice(0));
+  
+  const typing = (i, message) => {
     if (i > introMessage.length) {
-      setRestart(true)
+      setTimeout(() => setRestart(true), 1000)
       return;
     }
-    setMessage(introMessage.slice(0, i))
-    setTimeout(() => typing(i + 1), 150)
+    setMessage(message.slice(0, i))
+    setTimeout(() => typing(i + 1, message), 100)
   }
-  const deleting = (i) => {
+  const deleting = (i, message) => {
     if (i < 0) {
+      if (currentMessage == introMessage)
+        setCurrMessage(welcomeMessage.slice(0))
+      else
+        setCurrMessage(introMessage.slice(0))
       setRestart(false)
       return;
     }
-    setMessage(introMessage.slice(0, i))
-    setTimeout(() => deleting(i - 1), 80)
+    setMessage(message.slice(0, i))
+    setTimeout(() => deleting(i - 1, message), 50)
   }
   useEffect(() => {
     if (!restart)
-      typing(1)
+      typing(1, currentMessage)
     else
-      deleting(introMessage.length)
+      deleting(currentMessage.length, currentMessage)
   }, [restart]);
 
   return (
@@ -36,7 +43,7 @@ const Home = () => {
       <section className={styles.homeCard}>
         <img src="/me.jpeg" alt="My picture"></img>
         <div className={styles.description}>
-          <p>Hey there, </p>
+          <span>Hey there, </span>
           <p >{message}</p>
         </div>
       </section>

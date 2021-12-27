@@ -1,9 +1,9 @@
-import styles from '../styles/Home.module.css'
+import styles from '../styles/About.module.css'
 const IconsList = (props) => {
     return(
         <div>
-            <h3>{props.title}</h3>
-            <div className={styles.flx}>
+            <h3 className={styles.title}>{props.title}</h3>
+            <div className="flx">
             {props.children}
             </div>
         </div>

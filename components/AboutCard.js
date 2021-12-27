@@ -1,7 +1,9 @@
+import styles from '../styles/About.module.css'
+
 const AboutCard = (props) => {
     return(
-        <section>
-        <h2>{props.title}</h2>
+        <section className={ styles.aboutCard }>
+        <h2 className={styles.title}>{props.title}</h2>
         { props.children }
         </section>
     )

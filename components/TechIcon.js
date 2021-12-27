@@ -1,4 +1,4 @@
-import styles from '../styles/Home.module.css'
+import styles from '../styles/About.module.css'
 const TechIcon = function (props) {
     return (
         <div className={styles.iconContainer}>

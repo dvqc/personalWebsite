@@ -1,44 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Poppins:wght@200;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap');
-
-:root{
---maind-dark: #000814ff;
---main-blue : #001d3dff;
---sec-blue: #003566ff;
---sec-yellow: #ffc300ff;
---sec-golden: #ffd60a;
---sec-golden-off: rgb(180, 150, 1);
-font-size: 15px;
+:root {
+    --maind-dark: #000814ff;
+    --main-blue: #001d3dff;
+    --sec-blue: #003566ff;
+    --sec-yellow: #ffc300ff;
+    --sec-golden: #ffd60a;
+    --sec-golden-off: rgb(192, 160, 2);
+    --card-gradient: linear-gradient(300deg, rgba(71, 90, 255, 0.733), rgba(85, 167, 221, 0.836));
+    --bg-gradient: linear-gradient(65deg, rgb(24, 37, 156), rgb(34, 112, 201));
+    font-size: 15px;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
-
 
 body {
-  padding: 0;
-  margin: 0;
-  font-family: 'Source code pro' , monospace, sans-serif;
-  font-weight: 200;
-  min-height: 100vh;
-  background-color: rgb(223, 233, 248);
+    padding: 0;
+    margin: 0;
+    font-family: 'Source code pro', monospace, sans-serif;
+    font-weight: 200;
+    min-height: 100vh;
+    /*background-color: rgb(223, 233, 248); */
+    background: var(--bg-gradient);
 }
 
+li {
+    list-style: none;
+}
 #__next {
-  min-height: 100vh;
+    min-height: 100vh;
 }
 
 main {
-  max-width: 850px;
-  margin: 0 auto;
+    max-width: 850px;
+    margin: 0 auto;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.flx {
+    display: flex;
+    flex-wrap: wrap;
 }
