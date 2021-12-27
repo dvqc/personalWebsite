@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 
-function MyApp({ Component, pageProps }){
-    const { Component, pageProps } = this.props
+function MyApp(props){
+    const { Component, pageProps } = props
 
     const getLayout = Component.getLayout || (page => page)
 
