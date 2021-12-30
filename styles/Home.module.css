@@ -12,91 +12,25 @@
     align-items: center;
 }
 
-.title a {
-    color: #0070f3;
-    text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-    text-decoration: underline;
-}
-
-.title {
-    margin: 0;
-    line-height: 1.15;
-    font-size: 4rem;
-}
-
-.code {
-    background: #fafafa;
-    border-radius: 5px;
-    padding: 0.75rem;
-    font-size: 1.1rem;
-    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 800px;
-}
-
-.card {
-    margin: 1rem;
-    padding: 1.5rem;
-    text-align: left;
-    color: inherit;
-    text-decoration: none;
-    border: 1px solid #eaeaea;
-    border-radius: 10px;
-    transition: color 0.15s ease, border-color 0.15s ease;
-    max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-    color: #0070f3;
-    border-color: #0070f3;
-}
-
-.card h2 {
-    margin: 0 0 1rem 0;
-    font-size: 1.5rem;
-}
-
-.card p {
-    margin: 0;
-    font-size: 1.25rem;
-    line-height: 1.5;
-}
-
-
 .homeCard {
     display: flex;
     flex-direction: row;
     margin: 5rem auto;
-    background: var(--card-gradient);
-    border-radius: 20px;
-    box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.404),
-                0 30px 60px -30px rgba(0, 0, 0, 0.384),
-                inset 0 -2px 6px 0 rgb(10 37 64 / 35%);
+    background: var(--card-bg);
+    border-radius: var(--card-radius);
+    box-shadow: var(--card-shadow);
+    border: var(--card-border);
 }
 
 .homeCard img {
     max-width: 250px;
-    border-radius: 15px;
+    border-radius: var(--card-radius);
     margin: 20px;
     object-fit: cover;
-    box-shadow: 0 10px 20px 10px rgba(57, 57, 95, 0.521);
 }
 
 .homeCard span {
-    color: var(--sec-golden);
+    color: var(--title-color);
     font-weight: 500;
     font-size: 2.5rem;
     margin: 0;
@@ -105,7 +39,7 @@
 
 .homeCard p {
     font-size: 2rem;
-    color: aliceblue;
+    color: var(--text-color);
     margin: 10px 0;
     text-align: start;
     font-weight: 400;
@@ -136,7 +70,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--sec-golden);
+    background: var(--nav-bg);
+    box-shadow: var(--nav-shadow);
+    color: var(--text-color);
     margin-top: 0px;
 }
 
@@ -162,25 +98,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    filter: invert(77%) sepia(87%) saturate(882%) hue-rotate(351deg) brightness(65%) contrast(101%);
+/*     filter: invert(77%) sepia(87%) saturate(882%) hue-rotate(351deg) brightness(65%) contrast(101%);
+ */    filter: invert(77%) sepia(87%) saturate(0%) hue-rotate(351deg) brightness(40%) contrast(101%);
     transition: all 0.125s ease-in;
 }
 
 .links a:hover {
     transform: scale(1.2);
-    filter: invert(77%) sepia(87%) saturate(882%) hue-rotate(351deg) brightness(100%) contrast(101%);
+/*     filter: invert(77%) sepia(87%) saturate(882%) hue-rotate(351deg) brightness(100%) contrast(101%);
+ */    filter: invert(77%) sepia(87%) saturate(0%) hue-rotate(351deg) brightness(80%) contrast(101%);
 }
 
 .navbar {
     display: flex;
     padding: 0 16px;
-    /*   background: linear-gradient(var(--sec-blue), var(--main-blue));
-  */
-    /*   background: linear-gradient(rgba(0, 16, 163, 0.99), rgba(0, 69, 148, 0.99));
-  box-shadow: 0px 2px 10px #494381dc;
- 
-*/
-    background: transparent;
+    background: var(--nav-bg);
+    box-shadow: var(--nav-shadow);
     justify-content: space-between;
     align-items: center;
 }
@@ -200,7 +133,7 @@
 .logo span {
     display: block;
     font-size: 0.8rem;
-    color: var(--sec-golden);
+    color: var(--text-color);    
 }
 
 .navItems {
@@ -212,13 +145,13 @@
     font-size: 1.5rem;
     font-weight: 400;
     padding: 0 15px;
-    color: var(--sec-golden-off);
+    color: var(--text-color);
     transition: all 0.2s ease-out;
 }
 
 a.navItem:hover {
     transform: scale(1.3);
-    color: var(--sec-golden);
+    color: var(--title-color);
 }
 
 @media (max-width:450px) {

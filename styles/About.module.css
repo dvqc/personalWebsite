@@ -1,23 +1,23 @@
 
 .title {
-    color: var(--sec-yellow);
+    color: var(--title-color);
     font-weight: 800;
     width: fit-content;
-    padding: 0 0.5rem;
+    padding: 0.5rem 0.5rem;
+    border-bottom : var(--title-border);
 }
 
 
 .aboutCard {
     margin: 4rem 2rem;
     padding: 1rem 1rem;
-    background: var(--card-gradient);
-    border-radius: 20px;
-    box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.404),
-                0 30px 60px -30px rgba(0, 0, 0, 0.384),
-                inset 0 -2px 6px 0 rgb(10 37 64 / 35%);
+    background: var(--card-bg);
+    border-radius: var(--card-radius);
+    box-shadow: var(--card-shadow);
     font-weight: 600;
-    color: aliceblue;
+    color: var(--text-color);
     font-size: 1.4rem;
+    border: var(--card-border);
 }
 
 .icon {
@@ -38,5 +38,5 @@
     padding: 1rem 2rem;
     font-weight: 600;
     font-size: 1.4rem;
-    color: aliceblue;
+    color: var(--text-color);
 }

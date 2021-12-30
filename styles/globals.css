@@ -1,15 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Poppins:wght@200;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap');
 :root {
-    --maind-dark: #000814ff;
-    --main-blue: #001d3dff;
-    --sec-blue: #003566ff;
-    --sec-yellow: #ffc300ff;
-    --sec-golden: #ffd60a;
-    --sec-golden-off: rgb(192, 160, 2);
-    --card-gradient: linear-gradient(to top, rgba(71, 90, 255, 0.733), rgba(85, 167, 221, 0.836));
-    --bg-gradient: linear-gradient(to bottom, rgb(24, 37, 156), rgb(34, 112, 201));
+    --main-dark: #000814ff;
+    --main-blue: #151515/* 001d3dff */;
+    --sec-blue: #3C415C/* 003566ff */;
+    --sec-yellow: aliceblue /* ffc300ff */;
+    --sec-golden: #ccddff/* ffd60a */;
+    --sec-golden-off: gray /* rgb(192, 160, 2) */;
+    --card-gradient: var(--main-blue)/* linear-gradient(to top, rgba(71, 90, 255, 0.733), rgba(85, 167, 221, 0.836)) */;
+    --bg-gradient: var(--main-dark)/* linear-gradient(to bottom, rgb(24, 37, 156), rgb(34, 112, 201)) */;
     font-size: 15px;
+    --background: #12181d;
+    --text-color: #b2becd;
+    --title-color: #fff;
+    --nav-shadow: 4px 0 10px -3px #0c0c0c;
+    --card-shadow: 0 4px 8px rgba(0,0,0,0.30);
+    --nav-bg: #2a2e3d;
+    --card-bg: #383e52;
+    --title-border: 2px dashed var(--card-bg);
+    --card-border: 1px solid var(--nav-bg);
+    --card-radius: 0.25em;
 }
 
 html {
@@ -23,7 +33,7 @@ body {
     font-weight: 200;
     min-height: 100vh;
     /*background-color: rgb(223, 233, 248); */
-    background: var(--bg-gradient);
+    background: var(--background);
 }
 
 li {
