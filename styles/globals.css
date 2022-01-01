@@ -3,14 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 :root {
-    --main-dark: #000814ff;
-    --main-blue: #151515/* 001d3dff */;
-    --sec-blue: #3C415C/* 003566ff */;
-    --sec-yellow: aliceblue /* ffc300ff */;
-    --sec-golden: #ccddff/* ffd60a */;
-    --sec-golden-off: gray /* rgb(192, 160, 2) */;
-    --card-gradient: var(--main-blue)/* linear-gradient(to top, rgba(71, 90, 255, 0.733), rgba(85, 167, 221, 0.836)) */;
-    --bg-gradient: var(--main-dark)/* linear-gradient(to bottom, rgb(24, 37, 156), rgb(34, 112, 201)) */;
     font-size: clamp(15px);
     --background: #12181d;
     --text-color: #b2becd;

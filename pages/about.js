@@ -3,7 +3,7 @@ import AboutCard from '../components/AboutCard'
 import TechIcon from '../components/TechIcon'
 import List from '../components/List'
 import IconsList from '../components/IconsList'
-import styles from '../styles/About.module.css'
+import styles from '../styles/About.module.scss'
 
 
 const About = () => {
