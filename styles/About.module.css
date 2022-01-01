@@ -1,7 +1,7 @@
 
 .title {
     color: var(--title-color);
-    font-weight: 800;
+    font-weight: 700;
     width: fit-content;
     padding: 0.5rem 0.5rem;
     border-bottom : var(--title-border);
@@ -14,7 +14,7 @@
     background: var(--card-bg);
     border-radius: var(--card-radius);
     box-shadow: var(--card-shadow);
-    font-weight: 600;
+    font-weight: 500;
     color: var(--text-color);
     font-size: 1.4rem;
     border: var(--card-border);
@@ -36,7 +36,7 @@
 
 .aboutIntro {
     padding: 1rem 2rem;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.4rem;
     color: var(--text-color);
 }
