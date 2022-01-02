@@ -1,4 +1,4 @@
-import '../styles/globals.scss'
+import '../styles/index.scss'
 
 function MyApp(props){
     const { Component, pageProps } = props
