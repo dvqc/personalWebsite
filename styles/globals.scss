@@ -9,12 +9,12 @@ $nav-shadow: 4px 0 10px -3px #0c0c0c;
 $card-shadow: 0 4px 8px rgba(0,0,0,0.30);
 $nav-bg: #2a2e3d;
 $card-bg: #383e52;
-$title-border: 2px dashed var($card-bg);
-$card-border: 1px solid var($nav-bg);
+$title-border: 2px dashed $card-bg;
+$card-border: 1px solid $nav-bg;
 $card-radius: 0.25em;
 
 :root {
-    font-size: clamp(15px);
+    font-size: 15px;
 }
 
 html {
@@ -28,7 +28,7 @@ body {
     font-weight: 200;
     min-height: 100vh;
     /*background-color: rgb(223, 233, 248); */
-    background: var($background);
+    background: $background;
 }
 
 li {
@@ -40,7 +40,7 @@ li::before {
     display: inline-block;
     height: 0.6rem;
     width: 0.6rem;
-    background: var($sec-yellow);
+    background: $text-color;
     margin-right: 5px;
     border-radius: 0.6rem;
 }
